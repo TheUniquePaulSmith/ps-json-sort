@@ -1,4 +1,4 @@
-# ps-json-sort
+# ps-sort-json
 Powershell module that will sort JSON using JSON.NET.
 
 
@@ -6,7 +6,11 @@ Powershell module that will sort JSON using JSON.NET.
 The following script below will download the powershell binary module to temp directory and load it into your powershell session with all needed utilities such as JSON.NET version 12.0.3.23909
 
 ```powershell
-iwr -uri "https://raw.githubusercontent.com/TheUniquePaulSmith/ps-json-sort/master/TheUniquePaulSmith.PowerShell.Commands-Merged.dll" -OutFile "$([System.IO.Path]::GetTempPath())TheUniquePaulSmith.PowerShell.Commands-Merged.dll"; 
+#Download the module
+iwr -uri "https://raw.githubusercontent.com/TheUniquePaulSmith/ps-sort-json/master/TheUniquePaulSmith.PowerShell.Commands-Merged.dll" `
+ -OutFile "$([System.IO.Path]::GetTempPath())TheUniquePaulSmith.PowerShell.Commands-Merged.dll"; 
+
+#Import the module
 Import-Module "$([System.IO.Path]::GetTempPath())TheUniquePaulSmith.PowerShell.Commands-Merged.dll"
 ```
 
