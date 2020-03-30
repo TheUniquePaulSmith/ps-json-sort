@@ -49,3 +49,4 @@ Sort-JSON -InputObject $jObj
 
 ## Disclaimer / Issues
 While I have not seen any issues with sorting JSON, I'd still validate that the sort does not affect the data integrity of the original JSON document
+If you a discover an issue please add to issues list
